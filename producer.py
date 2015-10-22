@@ -41,7 +41,7 @@ if __name__ == "__main__":
         format='%(asctime)s.%(msecs)s:%(name)s:%(thread)d:%(levelname)s:%(process)d:%(message)s',
         level=logging.WARN
     )
-    parser = argparse.ArgumentParser(description='Apache Kafka consumer. Can be used as a topic monitor')
+    parser = argparse.ArgumentParser(description='Apache Kafka producer. Can be used as a topic monitor')
     parser.add_argument('--kafka', help='Comma-separated kafka brokers', required=True)
     parser.add_argument('--topic', help='Topic name', required=True)
 
